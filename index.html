@@ -1,137 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickDry</title>
     <style>
-      .button-center {
-        border: 2px solid black;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
+      img.phone {
+        width: 30%;
         display: block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 8px;
-        cursor: pointer;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
+        margin: auto;
       }
-
-      h1 {
+      p.intro {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: larger;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: xx-large;
       }
-
-      p {
+      p.designed-by {
+        font-family: sans-serif;
+        font-size: larger;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: x-large;
       }
-
-      canvas {
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
+      button.login {
+        width: 16%;
         display: block;
-        border-radius: 30px;
+        margin: auto;
+        margin-top: -20%;
+        font-size: large;
+        padding: 6px;
+      }
+      button.signup {
+        width: 16%;
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        font-size: large;
+        padding: 6px;
+      }
+      input.password {
+        width: 20%;
+        display: block;
+        margin: auto;
+        margin-top: 1%;
+        font-size: 20px;
+        padding: 4px;
+      }
+      input.username {
+        width: 20%;
+        display: block;
+        margin: auto;
+        margin-top: -20%;
+        font-size: 20px;
+        padding: 4px;
       }
     </style>
   </head>
-
   <body>
-    <h1>Quick Dry</h1>
-    <p>My first paragraph.</p>
-    <canvas
-      id="phone-background"
-      width="350"
-      height="650"
-      style="border: 2px solid black"
-    >
-    </canvas>
-    <button
-      class="button-center"
-      style="bottom: 130px; background-color: white; color: black; width: 150px"
-    >
-      Sign Up
-    </button>
-    <form>
-      <label
-        for="username"
-        style="
-          position: relative;
-          bottom: 450px;
-          left: 780px;
-          font-size: x-large;
-        "
-        >Username:</label
-      >
-      <input
-        type="text"
-        id="username"
-        name="username"
-        style="
-          position: relative;
-          bottom: 450px;
-          left: 780px;
-          font-size: large;
-          width: 10%;
-        "
-      />
-
-      <label
-        for="password"
-        style="
-          position: relative;
-          bottom: 400px;
-          left: 477px;
-          font-size: x-large;
-        "
-        >Password:</label
-      >
-      <input
-        type="text"
-        id="password"
-        name="password"
-        style="
-          position: relative;
-          bottom: 400px;
-          left: 477px;
-          font-size: large;
-          width: 10%;
-        "
-      />
-
-      <input
-        type="submit"
-        value="Login"
-        style="
-          position: relative;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          bottom: 300px;
-          font-size: 16px;
-          padding: 15px 32px;
-          width: 150px;
-          color: black;
-          border: solid black;
-          border-radius: 8px;
-          background-color: white;
-          border-width: 2px;
-        "
-      />
-    </form>
-    <p
-      style="
-        text-align: center;
-        position: relative;
-        bottom: 700px;
-        font-size: xx-large;
-      "
-    >
-      Welcome to Quick Dry
+    <p class="intro">Welcome to QuickDry</p>
+    <p class="designed-by">
+      Designed by: Trevor Borden, Sam Grobelny, Ryan McMaster, and Nate Saunders
     </p>
+    <img src="/images/iphone-quickdry.png" class="phone" />
+    <button class="login">Login</button>
+    <button class="signup">Sign Up</button>
+    <input
+      class="username"
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Username"
+    />
+    <input
+      class="password"
+      type="text"
+      name="password"
+      id="password"
+      placeholder="Password"
+    />
   </body>
 </html>
