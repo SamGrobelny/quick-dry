@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickDry</title>
     <style>
-      img.phone {
-        width: 380px;
-        display: block;
-        margin: auto;
-      }
       p.intro {
         font-family: sans-serif;
         font-weight: bold;
@@ -21,37 +16,45 @@
         font-size: larger;
         text-align: center;
       }
+      div.username {
+        position: relative;
+        text-align: center;
+        top: -360px;
+      }
+      input.username {
+        width: 250px;
+        font-size: 20px;
+        padding: 4px;
+      }
+      div.password {
+        position: relative;
+        text-align: center;
+        top: -360px;
+        margin-top: 20px;
+      }
+      input.password {
+        width: 250px;
+        margin-top: 0px;
+        font-size: 20px;
+        padding: 4px;
+      }
+      div.buttons {
+        position: relative;
+        top: -320px;
+        width: 250px;
+        margin: auto;
+      }
       button.login {
         width: 250px;
-        display: block;
-        margin: auto;
-        margin-top: -180px;
+        margin-top: 0px;
         font-size: large;
         padding: 6px;
       }
       button.signup {
         width: 250px;
-        display: block;
-        margin: auto;
-        margin-top: -100px;
+        margin-top: 20px;
         font-size: large;
         padding: 6px;
-      }
-      input.password {
-        width: 250px;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        font-size: 20px;
-        padding: 4px;
-      }
-      input.username {
-        width: 250px;
-        display: block;
-        margin: auto;
-        margin-top: -180px;
-        font-size: 20px;
-        padding: 4px;
       }
     </style>
   </head>
@@ -60,22 +63,30 @@
     <p class="designed-by">
       Designed by: Trevor Borden, Sam Grobelny, Ryan McMaster, and Nate Saunders
     </p>
-    <img src="/images/iphone-quickdry.png" class="phone" />
-    <button class="login">Login</button>
-    <button class="signup">Sign Up</button>
-    <input
-      class="username"
-      type="text"
-      name="username"
-      id="username"
-      placeholder="Username"
-    />
-    <input
-      class="password"
-      type="text"
-      name="password"
-      id="password"
-      placeholder="Password"
-    />
+    <div style="text-align: center; width: 400px; margin: auto; z-index: -1">
+      <img src="/images/iphone-quickdry.png" style="width: 380px" />
+    </div>
+    <div class="username">
+      <input
+        class="username"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+      />
+    </div>
+    <div class="password">
+      <input
+        class="password"
+        type="text"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+    </div>
+    <div class="buttons">
+      <button class="login">Login</button>
+      <button class="signup">Sign Up</button>
+    </div>
   </body>
 </html>
