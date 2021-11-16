@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickDry</title>
     <style>
-      img.phone {
-        width: 40%;
-        display: block;
-        margin: auto;
-      }
       p.intro {
         font-family: sans-serif;
         font-weight: bold;
@@ -21,6 +16,11 @@
         font-size: larger;
         text-align: center;
       }
+      .top-center{
+        position: relative;
+        text-align: center;
+        top: -710px;
+      }
     </style>
   </head>
   <body>
@@ -28,6 +28,12 @@
     <p class="designed-by">
       Designed by: Trevor Borden, Sam Grobelny, Ryan McMaster, and Nate Saunders
     </p>
-    <img src="/images/iphone-quickdry.png" class="phone"/>
+    <div style="text-align: center; width: 400px; margin: auto;">
+      <img src="/images/iphone-quickdry.png" style="width: 380px" />
+    </div>
+    <div class="top-center">
+      <p style="font-size: x-large;">Time</p>
+      <p style="font-size: x-large; margin-top: -25px;">Remaining:</p>
+    </div>
   </body>
 </html>
