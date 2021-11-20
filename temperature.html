@@ -28,28 +28,21 @@
         padding: 5px 12px;
         font-size: 18px;
       }
-      div.preferences {
+      div.temp {
         position: relative;
         margin: auto;
         text-align: center;
-        top: -690px;
+        width: 250px;
+        top: -680px;
       }
-      p.preferences {
-        font-size: xx-large;
+      input.temp {
+        width: 210px;
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 5px;
       }
-      div.button-group {
-        position: relative;
-        margin: auto;
-        text-align: center;
-        width: auto;
-        height: auto;
-        bottom: 715px;
-      }
-      button.button-group {
-        margin-top: 15px;
-        width: 270px;
-        height: 55px;
-        font-size: larger;
+      p.temp {
+        font-size: 25px;
       }
     </style>
   </head>
@@ -62,27 +55,25 @@
       <img src="/images/iphone-quickdry.png" style="width: 380px" />
     </div>
     <div class="back">
-      <a href="main-screen.html">
+      <a href="preferences.html">
         <button class="back">Back</button>
       </a>
     </div>
-    <div class="preferences">
-      <p class="preferences">Preferences</p>
+    <div
+      style="position: relative; margin: auto; text-align: center; top: -680px"
+    >
+      <p style="font-size: 40px">Temperature</p>
     </div>
-    <div class="button-group">
-      <a href="timer.html">
-        <button class="button-group">Timer</button>
-      </a>
-      <a href="temperature.html">
-        <button class="button-group">Temperature</button>
-      </a>
-      <button class="button-group">Notifications</button>
-      <button class="button-group">Support</button>
-      <button class="button-group">Pair Device</button>
-      <button class="button-group">Language</button>
-      <a href="index.html">
-        <button class="button-group">Log Out</button>
-      </a>
+    <div class="temp">
+      <p class="temp">Preferred Temp:</p>
+      <input class="temp" type="text" value="" />
+      <p class="temp">Actual Temp:</p>
+      <input class="temp" type="text" value="" />
+    </div>
+    <div
+      style="position: relative; margin: auto; text-align: center; top: -610px"
+    >
+      <button style="padding: 15px 70px; font-size: 25px">Save</button>
     </div>
   </body>
 </html>
