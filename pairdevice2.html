@@ -28,28 +28,54 @@
         padding: 5px 12px;
         font-size: 18px;
       }
-      div.preferences {
+      div.pair {
         position: relative;
         margin: auto;
         text-align: center;
-        top: -690px;
-        width: 200px;
+        top: -650px;
       }
-      p.preferences {
-        font-size: xx-large;
+      p.pair {
+        font-size: 30px;
       }
-      div.button-group {
+      div.pair-text {
         position: relative;
         margin: auto;
         text-align: center;
-        width: 300px;
-        bottom: 715px;
+        top: -620px;
+        width: 280px;
+        height: 100px;
+        background-color: rgb(206, 206, 206);
+        border-radius: 5px;
+        border: 2px solid black;
       }
-      button.button-group {
-        margin-top: 15px;
-        width: 270px;
-        height: 55px;
-        font-size: larger;
+      p.pair-text {
+        font-size: 23px;
+      }
+      div.pair-id {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        top: -600px;
+        width: 280px;
+        height: 70px;
+        background-color: rgb(206, 206, 206);
+        border-radius: 5px;
+        border: 2px solid black;
+      }
+      p.pair-id {
+        font-size: 23px;
+      }
+      div.pair-buttons {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        top: -560px;
+      }
+      button.pair-buttons {
+        font-size: 25px;
+        padding: 7px;
+        width: 100px;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -62,34 +88,25 @@
       <img src="/images/iphone-quickdry.png" style="width: 380px" />
     </div>
     <div class="back">
-      <a href="main-screen.html">
+      <a href="pairdevice.html">
         <button class="back">Back</button>
       </a>
     </div>
-    <div class="preferences">
-      <p class="preferences">Preferences</p>
+    <div class="pair">
+      <p class="pair">Pair Device:</p>
     </div>
-    <div class="button-group">
-      <a href="timer.html">
-        <button class="button-group">Timer</button>
-      </a>
-      <a href="temperature.html">
-        <button class="button-group">Temperature</button>
-      </a>
-      <a href="notifications.html">
-        <button class="button-group">Notifications</button>
-      </a>
-      <a href="support.html">
-        <button class="button-group">Support</button>
+    <div class="pair-text">
+      <p class="pair-text">Device found. Is this your device ID?</p>
+    </div>
+    <div class="pair-id">
+      <p class="pair-id">ID: 12345678</p>
+    </div>
+    <div class="pair-buttons">
+      <a href="main-screen.html">
+        <button class="pair-buttons" style="margin-right: 30px">Yes</button>
       </a>
       <a href="pairdevice.html">
-        <button class="button-group">Pair Device</button>
-      </a>
-      <a href="language.html">
-        <button class="button-group">Language</button>
-      </a>
-      <a href="index.html">
-        <button class="button-group">Log Out</button>
+        <button class="pair-buttons">No</button>
       </a>
     </div>
   </body>
