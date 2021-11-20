@@ -28,7 +28,7 @@
         width: 180px;
         margin: auto;
         text-align: center;
-        top: -600px;
+        top: -650px;
       }
       button.start {
         padding: 70px 45px;
@@ -40,7 +40,7 @@
         position: relative;
         width: 50px;
         margin: auto;
-        top: -960px;
+        top: -1010px;
         left: 120px;
       }
       rect.burger {
@@ -55,8 +55,13 @@
         width: 110px;
         height: 120px;
         border-radius: 7px;
-        top: -550px;
+        top: -600px;
         left: -80px;
+      }
+      p.temp {
+        margin-top: 5px;
+        text-align: center;
+        font-size: larger;
       }
       div.moist {
         position: relative;
@@ -65,8 +70,13 @@
         width: 110px;
         height: 120px;
         border-radius: 7px;
-        top: -674px;
+        top: -724px;
         left: 80px;
+      }
+      p.moist {
+        margin-top: 5px;
+        text-align: center;
+        font-size: larger;
       }
     </style>
   </head>
@@ -81,6 +91,7 @@
     <div class="top-center">
       <p style="font-size: x-large">Time</p>
       <p style="font-size: x-large; margin-top: -25px">Remaining:</p>
+      <p style="margin-top: -20px; font-size: xx-large;">00:00:00</p>
     </div>
     <div class="start">
       <a href="">
@@ -88,7 +99,7 @@
       </a>
     </div>
     <div class="burger">
-      <a href="">
+      <a href="preferences.html">
         <svg width="50" height="50" class="burger">
           <rect y="5" width="50" rx="3" height="10" class="burger"></rect>
           <rect y="20" rx="3" width="50" height="10" class="burger"></rect>
@@ -96,7 +107,13 @@
         </svg>
       </a>
     </div>
-    <div class="temp"></div>
-    <div class="moist"></div>
+    <div class="temp">
+      <p class="temp">Current<br />Temp:</p>
+      <p class="temp" style="font-size: xx-large;">125</p>
+    </div>
+    <div class="moist">
+      <p class="moist">Moisture<br />Level:</p>
+      <p class="moist" style="font-size: xx-large;">3</p>
+    </div>
   </body>
 </html>
